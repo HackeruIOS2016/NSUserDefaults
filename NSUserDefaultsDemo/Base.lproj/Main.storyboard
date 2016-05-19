@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NSUserDefaultsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="note" translatesAutoresizingMaskIntoConstraints="NO" id="Lm9-n0-ga8">
+                                <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="O1g-I0-Nvr">
+                                <rect key="frame" x="33" y="72" width="254" height="369"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">                                                                                        Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sdv-El-jgc">
+                                <rect key="frame" x="270" y="450" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="btnSaveTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GPx-9Q-Rkt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Lm9-n0-ga8" secondAttribute="bottom" id="8k3-Sw-7bx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Sdv-El-jgc" secondAttribute="bottom" id="Gfj-5p-U2C"/>
+                            <constraint firstItem="O1g-I0-Nvr" firstAttribute="centerX" secondItem="Lm9-n0-ga8" secondAttribute="centerX" id="Ua5-Ty-upg"/>
+                            <constraint firstItem="Lm9-n0-ga8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Vxc-bL-cWH"/>
+                            <constraint firstItem="Lm9-n0-ga8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="fuD-Rt-c1F"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Sdv-El-jgc" secondAttribute="trailing" id="fwr-1s-5uP"/>
+                            <constraint firstItem="O1g-I0-Nvr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="17" id="ie9-ki-D99"/>
+                            <constraint firstAttribute="trailing" secondItem="Lm9-n0-ga8" secondAttribute="trailing" id="lGA-G4-aoI"/>
+                            <constraint firstItem="O1g-I0-Nvr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="52" id="n2U-sL-kUZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="O1g-I0-Nvr" secondAttribute="bottom" constant="39" id="ohE-qT-887"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="imageView" destination="Lm9-n0-ga8" id="AoF-Vj-xBe"/>
+                        <outlet property="textView" destination="O1g-I0-Nvr" id="sQP-1u-zKY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-208" y="421"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="note" width="1012" height="1300"/>
+    </resources>
+</document>
